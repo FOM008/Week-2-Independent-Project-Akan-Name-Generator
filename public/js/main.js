@@ -9,16 +9,16 @@ function calculate() {
     const YY = parseInt(date.getFullYear().toString().slice(2));
     const MM = date.getMonth() + 1;
     const DD = date.getDate();
-    const h = Math.floor(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+//     const h = Math.floor(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
   
-    let akanName = null
+//     let akanName = null
   
-    if (gender == "male") {
-      akanName = MALE_NAMES[h];
-    } else if (gender == "female") {
-      akanName = FEMALE_NAMES[h];
-    }
+//     if (gender == "male") {
+//       akanName = MALE_NAMES[h];
+//     } else if (gender == "female") {
+//       akanName = FEMALE_NAMES[h];
+//     }
   
-    document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
-  }
+//     document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
+//   }
   
