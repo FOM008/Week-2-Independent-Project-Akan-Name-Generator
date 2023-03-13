@@ -11,7 +11,7 @@ function calculate() {
     const DD = date.getDate();
     const h = Math.floor(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
   
-//     let akanName = null
+    let akanName = null
   
 //     if (gender == "male") {
 //       akanName = MALE_NAMES[h];
