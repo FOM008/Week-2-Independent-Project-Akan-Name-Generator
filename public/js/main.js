@@ -19,5 +19,5 @@ function calculate() {
       akanName = FEMALE_NAMES[h];
     }
   
-//     document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
-//   }
+    document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
+  }
