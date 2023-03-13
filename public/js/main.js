@@ -13,11 +13,11 @@ function calculate() {
   
     let akanName = null
   
-//     if (gender == "male") {
-//       akanName = MALE_NAMES[h];
-//     } else if (gender == "female") {
-//       akanName = FEMALE_NAMES[h];
-//     }
+    if (gender == "male") {
+      akanName = MALE_NAMES[h];
+    } else if (gender == "female") {
+      akanName = FEMALE_NAMES[h];
+    }
   
 //     document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
 //   }
