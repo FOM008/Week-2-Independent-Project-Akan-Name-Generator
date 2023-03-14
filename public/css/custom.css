@@ -8,7 +8,7 @@ body {
     
 }
 
-.header h3 {
+/* .header h3 {
     padding: 15px;
     font-weight: 700;
     font-size: xx-large;
@@ -66,4 +66,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: rgb(105, 19, 155);
-}
+} */
