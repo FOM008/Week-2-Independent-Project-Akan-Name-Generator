@@ -13,6 +13,8 @@ CSS, HTML & Javascript. Styling was done using bootstrap
 The details can be found on : https://github.com/FOM008/Week-2-Independent-Project-Akan-Name-Generator
 
 ### Link to live site on GitHub Pages
+https://fom008.github.io/Week-2-Independent-Project-Akan-Name-Generator/
+
 
 
 ### Copyright and license information
