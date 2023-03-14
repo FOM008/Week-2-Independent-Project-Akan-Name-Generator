@@ -27,17 +27,17 @@ const akan = function(y, m, d, g) {
 
 
 
-// $(document).ready(function() {
-//     $("form#form").submit(function(event) {
-//         event.preventDefault();
-//         var y = parseInt($("#year").val());
-//         var m = parseInt($("#month").val());
-//         var d = parseInt($("#date").val());
-//         var g = $("input:radio[name=gender]:checked").val();
-//         var result = akan(y, m, d, g);
-//         alert(result);
+$(document).ready(function() {
+    $("form#form").submit(function(event) {
+        event.preventDefault();
+        var y = parseInt($("#year").val());
+        var m = parseInt($("#month").val());
+        var d = parseInt($("#date").val());
+        var g = $("input:radio[name=gender]:checked").val();
+        var result = akan(y, m, d, g);
+        alert(result);
         
         //refresh page
-        document.getElementById("form").reset();
-    });
-});
+//         document.getElementById("form").reset();
+//     });
+// });
