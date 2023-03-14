@@ -38,6 +38,6 @@ $(document).ready(function() {
         alert(result);
         
         //refresh page
-//         document.getElementById("form").reset();
-//     });
-// });
+        document.getElementById("form").reset();
+    });
+});
