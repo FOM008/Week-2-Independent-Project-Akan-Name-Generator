@@ -64,6 +64,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: rgb(105, 19, 155);
-} */
+}
