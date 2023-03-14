@@ -1,23 +1,43 @@
-function calculate() {
-    const date = new Date(document.getElementById("date").value);
-    const gender = document.getElementById("gender").value;
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const MALE_NAMES = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    const FEMALE_NAMES = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  
-    const CC = parseInt(date.getYear().toString().slice(0, 2));
-    const YY = parseInt(date.getYear().toString().slice(2));
-    const MM = date.getMonth();
-    const DD = date.getDate();
-    const h = Math.floor(((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-  
-    let akanName = null
-  
-    if (gender == "male") {
-      akanName = MALE_NAMES[h];
-    } else if (gender == "female") {
-      akanName = FEMALE_NAMES[h];
+const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+const akan = function(y, m, d, g) {
+    var femaleNames = [ {sunday:"Akosua"}, {monday:"Adwoa"}, {tuesday:"Abenaa"}, {wednesday:"Akua"}, {thursday:"Yaa"}, {friday:"Afua"}, {saturday:"Ama"}];
+    var maleNames = [{sunday:"Kwasi"}, {monday:"Kudwo"}, {tuesday:"Kwabena"}, {wednesday:"Kwaku"}, {thurday:"Yaw"}, {friday:"Kofi"}, {saturday:"Kwame"}];
+    var d = new Date(y, m, d).toISOString();
+    const theDay = days[new Date(d).getDay()];
+    if (g === "Female") {
+        let foundName
+        for (const a of femaleNames) {
+            for (const b in a) {
+                if(b === theDay) foundName = a;
+            }
+        }
+        return d && `Your name is: ${Object.values(foundName)[0]} and you were born on a ${Object.keys(foundName)[0]}`;
+    } else { 
+        let foundName
+        for (const a of maleNames) {
+            for (const b in a) {
+                if(b === theDay) foundName = a;
+            }
+        }
+        return d && `Your name is: ${Object.values(foundName)[0]} and you were born on a ${Object.keys(foundName)[0]}`;
+
     }
-  
-    document.getElementById("result").innerHTML = `You were born on a ${daysOfWeek[h]}, and your Akan name is ${akanName}.`;
-  }
+}
+
+
+
+// $(document).ready(function() {
+//     $("form#form").submit(function(event) {
+//         event.preventDefault();
+//         var y = parseInt($("#year").val());
+//         var m = parseInt($("#month").val());
+//         var d = parseInt($("#date").val());
+//         var g = $("input:radio[name=gender]:checked").val();
+//         var result = akan(y, m, d, g);
+//         alert(result);
+        
+        //refresh page
+        document.getElementById("form").reset();
+    });
+});
