@@ -42,7 +42,7 @@ legend {
     color: rgb(92, 34, 11);
 }
 
-/* input[type=number],
+input[type=number],
 [type="radio"] {
     width: 100%;
     padding: 8px 10px;
@@ -51,7 +51,7 @@ legend {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-} */
+}
 
 /* input[type=submit] {
     width: 100%;
