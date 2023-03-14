@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Akan Name Calculator</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="/public/css/custom.css">
-</head>
-<!-- <body> -->
-  <!-- <h1>Akan Name Calculator</h1>
-  <label for="date">D.O.B:</label>
-  <input type="date" id="date">
-  <br>
-  <label for="gender">Gender:</label>
-  <select id="gender">
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-  </select>
-  <br>
-  <button onclick="calculate()">Calculate</button>
-  <br>
-  <div id="result"></div>
-  <script src="/public/js/main.js"></script>
-</body> -->
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAN NAME GENERATOR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/custom.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="/public/js/main.js"></script>
+</head>
 
 <body>
     <div class="container">
@@ -39,7 +27,7 @@
                 </div>
                
                 <div class="col-md-8">
-                    <form >
+                    <form id="form" name="form" onsubmit="findDay()">
                         <legend>Fill the form below to generate your akan name and day of the week born:
                             <hr>
                         </legend>
@@ -55,25 +43,24 @@
                         <p>Select your gender: <br></p>
                         <div class="radio">
                             <label>
-                              <input type="radio" name="gender" value="female" >
+                              <input type="radio" name="gender" value="Female" >
                               Female
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                              <input type="radio" name="gender" value="male">
+                              <input type="radio" name="gender" value="Male">
                               Male
                         </label>
                         </div>
 
-                        <button onclick="calculate()">Calculate</button>
+                        <input type="submit" value="Submit">
                     </form>
                     <br>
                 </div>
             </div>
         </div>
     </div>
-    <div id="result"></div>
-    <script src="/public/js/main.js"></script>
 </body>
+
 </html>
