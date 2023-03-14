@@ -1,48 +1,48 @@
 body {
     background:  rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
-    /* width: 100%; */
+    width: 100%;
     font-family: cursive;
     text-align: center;
     color: black;
     
 }
 
-/* .header h3 {
+header h3 {
     padding: 15px;
     font-weight: 700;
     font-size: xx-large;
 }
 
-.header img {
+/* .header img {
     float: left;
     margin-left: 0;
     border-radius: 50%;
     width: 80px;
     height: 80px;
-}
+} */
 
-.p {
+/* .p {
     font-size: larger;
     font-weight: 700;
-}
+} */
 
 
-form {
+/* form {
     text-align: left;
     border-radius: 20px;
     background-color:  rgb(175, 175, 209);
     padding: 20px;
     width: 80%;
     margin-left: 25%;
-}
+} */
 
-legend {
+/* legend {
     text-align: center;
     color: rgb(92, 34, 11);
-}
+} */
 
-input[type=number],
+/* input[type=number],
 [type="radio"] {
     width: 100%;
     padding: 8px 10px;
@@ -51,9 +51,9 @@ input[type=number],
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
+} */
 
-input[type=submit] {
+/* input[type=submit] {
     width: 100%;
     background-color: rgb(157, 105, 180);
     color: white;
@@ -62,8 +62,8 @@ input[type=submit] {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-}
+} */
 
-input[type=submit]:hover {
+/* input[type=submit]:hover {
     background-color: rgb(105, 19, 155);
 } */
